@@ -8,9 +8,9 @@ namespace DataStructureAndAlgo
 	{
 		public DetermineMonotonicArray()
 		{
-			int[] array = new int[] { -1, -5, -10, -1100, -1100, -1101, -1102, -9001 };
+			int[] array = new int[] { -1, -5,2, -10, -1100, -1100, -1101, -1102, -9001 };
 			int[] falseArray = new int[] { 2, 2, 2, 1, 4, 5 };
-			var result = isMonotonic(falseArray);
+			var result = isMonotonic(array);
 			Console.WriteLine(result);
 		}
 		private bool isMonotonic(int[] array)
@@ -34,7 +34,7 @@ namespace DataStructureAndAlgo
 		public  bool breakDirection(int direction, int prev, int curr)
 		{
 			var diff = curr - prev;
-			if (direction > 0) return diff < 0;
+			if (direction > 0) return diff < 0; //Here we check if new difference is respecting the existing direction or not?
 			return diff > 0;
 		}
 	}
