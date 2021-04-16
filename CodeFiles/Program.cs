@@ -12,7 +12,8 @@ namespace DataStructureAndAlgo
 			//ThreeNumberSum ThreeNumberSum = new ThreeNumberSum();
 			//SmallestDifference SmallestDifference = new SmallestDifference();
 			//MoveElementToTheEnd SmallestDifference = new MoveElementToTheEnd();
-			DetermineMonotonicArray DetermineMonotonicArray = new DetermineMonotonicArray();
+			//DetermineMonotonicArray DetermineMonotonicArray = new DetermineMonotonicArray();
+			SortedSquaredArray SortedSquaredArray = new SortedSquaredArray();
 		}
 
 	}
