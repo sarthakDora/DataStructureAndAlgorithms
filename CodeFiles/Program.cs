@@ -11,7 +11,8 @@ namespace DataStructureAndAlgo
 			//ValidatingSubsequence validatingSubsequence = new ValidatingSubsequence();
 			//ThreeNumberSum ThreeNumberSum = new ThreeNumberSum();
 			//SmallestDifference SmallestDifference = new SmallestDifference();
-			MoveElementToTheEnd SmallestDifference = new MoveElementToTheEnd();
+			//MoveElementToTheEnd SmallestDifference = new MoveElementToTheEnd();
+			DetermineMonotonicArray DetermineMonotonicArray = new DetermineMonotonicArray();
 		}
 
 	}
