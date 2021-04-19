@@ -26,7 +26,6 @@ namespace DataStructureAndAlgo
 
 			foreach (var match in competitions)
 			{
-				//teamsFinalResult = results[rsltIndex] == 1 ? updateScore(teamsFinalResult, match[0]) : updateScore(teamsFinalResult, match[1]);
 				if (results[rsltIndex] == 1) { updateScore(teamsFinalResult, match[0]); } 
 				else { updateScore(teamsFinalResult, match[1]); }
 
@@ -44,7 +43,6 @@ namespace DataStructureAndAlgo
 			{
 				teamsFinalResult.Add(match, 3);
 			}
-			//return teamsFinalResult;
 		}
 		public string TournamentWinnerV2(List<List<string>> competitions, List<int> results)
 		{
