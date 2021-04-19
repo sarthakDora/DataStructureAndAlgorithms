@@ -14,7 +14,8 @@ namespace DataStructureAndAlgo
 			//MoveElementToTheEnd SmallestDifference = new MoveElementToTheEnd();
 			//DetermineMonotonicArray DetermineMonotonicArray = new DetermineMonotonicArray();
 			//SortedSquaredArray SortedSquaredArray = new SortedSquaredArray();
-			SpiralTraverse SpiralTraverse = new SpiralTraverse();
+			//SpiralTraverse SpiralTraverse = new SpiralTraverse();
+			TournamentWinner TournamentWinner = new TournamentWinner();
 		}
 
 	}
