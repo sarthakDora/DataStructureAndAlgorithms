@@ -17,7 +17,8 @@ namespace DataStructureAndAlgo
 			//SpiralTraverse SpiralTraverse = new SpiralTraverse();
 			//TournamentWinner TournamentWinner = new TournamentWinner();
 			//NonConstructibleCHange NonConstructibleCHange = new NonConstructibleCHange();
-			ClosestValueInBST ClosestValueInBST = new ClosestValueInBST();
+			//ClosestValueInBST ClosestValueInBST = new ClosestValueInBST();
+			PalindromeCheck PalindromeCheck = new PalindromeCheck();
 		}
 
 	}
