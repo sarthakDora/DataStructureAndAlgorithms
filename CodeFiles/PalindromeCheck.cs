@@ -17,6 +17,9 @@ namespace DataStructureAndAlgo
 			Console.WriteLine(isPalindromeV3(""));
 			Console.WriteLine(isPalindromeV4("abcdcba"));
 			Console.WriteLine(isPalindromeV4("test"));
+
+			Console.WriteLine(isPalindromeV5("abcdcba"));
+			Console.WriteLine(isPalindromeV5("test"));
 		}
 		private bool isPalindrome(string str)
 		{
@@ -62,6 +65,20 @@ namespace DataStructureAndAlgo
 				return false;
 			}
 			return isPalindromeV4(str, i + 1);
+		}
+		//With best time and space complexity using pointers 
+		//Time O(n) and Space O(1)
+		private bool isPalindromeV5(string str)
+		{
+			int leftPtr = 0;
+			int rightPtr = str.Length - 1;
+			while(leftPtr < rightPtr)
+			{
+				if (str[leftPtr] != str[rightPtr]) return false;
+				leftPtr += 1;
+				rightPtr -= 1;
+			}
+			return true;
 		}
 	}
 }
