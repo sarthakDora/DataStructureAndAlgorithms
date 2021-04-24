@@ -14,7 +14,9 @@ namespace DataStructureAndAlgo
 			Console.WriteLine(isPalindrome("test"));
 			Console.WriteLine(isPalindromeV2("abcdcba"));
 			Console.WriteLine(isPalindromeV2("test"));
-			Console.WriteLine(isPalindromeV3("")); 
+			Console.WriteLine(isPalindromeV3(""));
+			Console.WriteLine(isPalindromeV4("abcdcba"));
+			Console.WriteLine(isPalindromeV4("test"));
 		}
 		private bool isPalindrome(string str)
 		{
@@ -38,6 +40,7 @@ namespace DataStructureAndAlgo
 			}
 			return str == string.Join("", newstr);
 		}
+		//With Recurssion
 		private bool isPalindromeV3(string str, int i = 0)
 		{
 			var j = str.Length - 1 - i;
@@ -48,6 +51,17 @@ namespace DataStructureAndAlgo
 				return true;
 			}
 			return false;
+		}
+		//With Tail Recurssion
+		private bool isPalindromeV4(string str, int i = 0)
+		{
+			var j = str.Length - 1 - i;
+			if (i >= j) return true;			
+			if(str[i] != str[j] )
+			{
+				return false;
+			}
+			return isPalindromeV4(str, i + 1);
 		}
 	}
 }
