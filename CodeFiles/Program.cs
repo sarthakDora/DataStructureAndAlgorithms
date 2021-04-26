@@ -19,7 +19,8 @@ namespace DataStructureAndAlgo
 			//NonConstructibleCHange NonConstructibleCHange = new NonConstructibleCHange();
 			//ClosestValueInBST ClosestValueInBST = new ClosestValueInBST();
 			//PalindromeCheck PalindromeCheck = new PalindromeCheck();
-			FindFirstNonRepeatingChar FindFirstNonRepeatingChar = new FindFirstNonRepeatingChar();
+			//FindFirstNonRepeatingChar FindFirstNonRepeatingChar = new FindFirstNonRepeatingChar();
+			AmazonFreshDeliveries AmazonFreshDeliveries = new AmazonFreshDeliveries();
 		}
 
 	}
