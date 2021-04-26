@@ -18,7 +18,8 @@ namespace DataStructureAndAlgo
 			//TournamentWinner TournamentWinner = new TournamentWinner();
 			//NonConstructibleCHange NonConstructibleCHange = new NonConstructibleCHange();
 			//ClosestValueInBST ClosestValueInBST = new ClosestValueInBST();
-			PalindromeCheck PalindromeCheck = new PalindromeCheck();
+			//PalindromeCheck PalindromeCheck = new PalindromeCheck();
+			FindFirstNonRepeatingChar FindFirstNonRepeatingChar = new FindFirstNonRepeatingChar();
 		}
 
 	}
