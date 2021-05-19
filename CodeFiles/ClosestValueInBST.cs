@@ -9,6 +9,9 @@ namespace DataStructureAndAlgo
 		public ClosestValueInBST()
 		{
 			int target = 12;
+			//BST l = new BST(34);
+			//l.left = new BST(21);
+			//l.left.left = new BST(19);
 			BST left = new BST(5) { left = new BST(2), right = new BST(6), value = 5 };			 
 			BST right = new BST(15) { left = new BST(13), right = new BST(22), value = 15};
 			BST tree = new BST(10) {  left = left, right = right, value = 10};
