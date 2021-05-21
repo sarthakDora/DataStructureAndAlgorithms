@@ -20,7 +20,8 @@ namespace DataStructureAndAlgo
 			//ClosestValueInBST ClosestValueInBST = new ClosestValueInBST();
 			//PalindromeCheck PalindromeCheck = new PalindromeCheck();
 			//FindFirstNonRepeatingChar FindFirstNonRepeatingChar = new FindFirstNonRepeatingChar();
-			AmazonFreshDeliveries AmazonFreshDeliveries = new AmazonFreshDeliveries();
+			//AmazonFreshDeliveries AmazonFreshDeliveries = new AmazonFreshDeliveries();
+			LongestPeak LongestPeak = new LongestPeak();
 		}
 
 	}
