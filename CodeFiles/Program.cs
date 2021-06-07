@@ -22,7 +22,8 @@ namespace DataStructureAndAlgo
 			//FindFirstNonRepeatingChar FindFirstNonRepeatingChar = new FindFirstNonRepeatingChar();
 			//AmazonFreshDeliveries AmazonFreshDeliveries = new AmazonFreshDeliveries();
 			//LongestPeak LongestPeak = new LongestPeak();
-			ArrayOfProducts ArrayOfProducts = new ArrayOfProducts();
+			//ArrayOfProducts ArrayOfProducts = new ArrayOfProducts();
+			FirstDuplicateValueInArray FirstDuplicateValueInArray = new FirstDuplicateValueInArray();
 		}
 
 	}
