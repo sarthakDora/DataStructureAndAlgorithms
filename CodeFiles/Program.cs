@@ -23,7 +23,8 @@ namespace DataStructureAndAlgo
 			//AmazonFreshDeliveries AmazonFreshDeliveries = new AmazonFreshDeliveries();
 			//LongestPeak LongestPeak = new LongestPeak();
 			//ArrayOfProducts ArrayOfProducts = new ArrayOfProducts();
-			FirstDuplicateValueInArray FirstDuplicateValueInArray = new FirstDuplicateValueInArray();
+			//FirstDuplicateValueInArray FirstDuplicateValueInArray = new FirstDuplicateValueInArray();
+			RockPaperScissor RockPaperScissor = new RockPaperScissor();
 		}
 
 	}
