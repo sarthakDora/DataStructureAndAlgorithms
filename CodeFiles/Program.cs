@@ -24,7 +24,8 @@ namespace DataStructureAndAlgo
 			//LongestPeak LongestPeak = new LongestPeak();
 			//ArrayOfProducts ArrayOfProducts = new ArrayOfProducts();
 			//FirstDuplicateValueInArray FirstDuplicateValueInArray = new FirstDuplicateValueInArray();
-			RockPaperScissor RockPaperScissor = new RockPaperScissor();
+			//RockPaperScissor RockPaperScissor = new RockPaperScissor();
+			GetWrongAnswerSolution GetWrongAnswerSolution = new GetWrongAnswerSolution();
 		}
 
 	}
