@@ -25,7 +25,8 @@ namespace DataStructureAndAlgo
 			//ArrayOfProducts ArrayOfProducts = new ArrayOfProducts();
 			//FirstDuplicateValueInArray FirstDuplicateValueInArray = new FirstDuplicateValueInArray();
 			//RockPaperScissor RockPaperScissor = new RockPaperScissor();
-			GetWrongAnswerSolution GetWrongAnswerSolution = new GetWrongAnswerSolution();
+			//GetWrongAnswerSolution GetWrongAnswerSolution = new GetWrongAnswerSolution();
+			MergeOverlappingIntervals MergeOverlappingIntervals = new MergeOverlappingIntervals();
 		}
 
 	}
