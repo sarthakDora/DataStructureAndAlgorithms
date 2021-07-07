@@ -11,9 +11,10 @@ namespace DataStructureAndAlgo
 			var intervals = new int[][] { new int[] {1,2}, new int[] { 3,8}, new int[] { 9,10} };
 			var intervals2 = new int[][] { new int[] { 1, 2 }, new int[] { 3, 5 }, new int[] { 4,7 }, new int[] { 6,8 }, new int[] { 9, 10 } };
 			var intervals3 = new int[][] { new int[] { 1, 22 }, new int[] { -20, 30 }};
-			var rslt = MergeIntervals(intervals3);
+			var rslt = MergeIntervals(intervals2);
 
 		}
+		// Time O(nlog(n)) and Space O(n)
 		public int[][] MergeIntervals(int[][] intervals)
 		{
 			var cloned = intervals.Clone() as int[][];
