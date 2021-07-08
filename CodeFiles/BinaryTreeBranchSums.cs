@@ -16,8 +16,7 @@ namespace DataStructureAndAlgo
 		public BinaryTreeBranchSums(int val)
 		{
 			this.value = val;
-			this.left = null;
-			this.right = null;
+			this.left = this.right= null;
 		}
 		public void loadData()
 		{
@@ -25,6 +24,14 @@ namespace DataStructureAndAlgo
 			var right = new BinaryTreeBranchSums(15) { left = new BinaryTreeBranchSums(13), right = new BinaryTreeBranchSums(22), value = 15 };
 			var tree = new BinaryTreeBranchSums(10) { left = left, right = right, value = 10 };
 			var rslt = branchSum(tree);
+		}
+		public void loadData2()
+		{
+			BinaryTree tree = new BinaryTree();
+			tree.root = new Node(1);
+			tree.root.left = new Node(2);
+			tree.root.right = new Node(3);
+			tree.root.left.left = new Node(4);
 		}
 		//Time O(n) and Space O(n) | If we include call stack then space would be log(n)
 		public List<int> branchSum(BinaryTreeBranchSums root)
