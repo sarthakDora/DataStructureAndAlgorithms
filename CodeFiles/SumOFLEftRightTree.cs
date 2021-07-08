@@ -8,7 +8,6 @@ namespace DataStructureAndAlgo
 	{
 		public string Solution(long[] arr)
 		{
-			// Type your solution here
 			if (arr.Length <= 0) return "";
 			long leftSum = 0;
 			long rightSum = 0;
