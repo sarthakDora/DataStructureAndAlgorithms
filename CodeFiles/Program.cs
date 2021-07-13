@@ -27,7 +27,8 @@ namespace DataStructureAndAlgo
 			//RockPaperScissor RockPaperScissor = new RockPaperScissor();
 			//GetWrongAnswerSolution GetWrongAnswerSolution = new GetWrongAnswerSolution();
 			//MergeOverlappingIntervals MergeOverlappingIntervals = new MergeOverlappingIntervals();
-			BinaryTreeBranchSums BinaryTreeBranchSums = new BinaryTreeBranchSums();
+			//BinaryTreeBranchSums BinaryTreeBranchSums = new BinaryTreeBranchSums();
+			FourNumberSum FourNumberSum = new FourNumberSum();
 		}
 
 	}
