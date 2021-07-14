@@ -28,7 +28,8 @@ namespace DataStructureAndAlgo
 			//GetWrongAnswerSolution GetWrongAnswerSolution = new GetWrongAnswerSolution();
 			//MergeOverlappingIntervals MergeOverlappingIntervals = new MergeOverlappingIntervals();
 			//BinaryTreeBranchSums BinaryTreeBranchSums = new BinaryTreeBranchSums();
-			FourNumberSum FourNumberSum = new FourNumberSum();
+			//FourNumberSum FourNumberSum = new FourNumberSum();
+			SubArraySort SubArraySort = new SubArraySort();
 		}
 
 	}
