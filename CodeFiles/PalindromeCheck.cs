@@ -14,7 +14,7 @@ namespace DataStructureAndAlgo
 			Console.WriteLine(isPalindrome("test"));
 			Console.WriteLine(isPalindromeV2("abcdcba"));
 			Console.WriteLine(isPalindromeV2("test"));
-			Console.WriteLine(isPalindromeV3(""));
+			Console.WriteLine(isPalindromeV3("abcdcba"));
 			Console.WriteLine(isPalindromeV4("abcdcba"));
 			Console.WriteLine(isPalindromeV4("test"));
 
