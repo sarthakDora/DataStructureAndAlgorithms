@@ -33,7 +33,8 @@ namespace DataStructureAndAlgo
 			//LargestRange LargestRange = new LargestRange();
 			//CaesarCypherEncryter CaesarCypherEncryter = new CaesarCypherEncryter();
 			//FibonacciRecurssive FibonacciRecurssive = new FibonacciRecurssive();
-			RunLengthEncoding RunLengthEncoding = new RunLengthEncoding();
+			//RunLengthEncoding RunLengthEncoding = new RunLengthEncoding();
+			CharacterDocumentMatch CharacterDocumentMatch = new CharacterDocumentMatch();
 		}
 
 	}
