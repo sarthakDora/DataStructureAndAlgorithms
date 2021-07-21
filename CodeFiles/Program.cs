@@ -30,11 +30,13 @@ namespace DataStructureAndAlgo
 			//BinaryTreeBranchSums BinaryTreeBranchSums = new BinaryTreeBranchSums();
 			//FourNumberSum FourNumberSum = new FourNumberSum();
 			//SubArraySort SubArraySort = new SubArraySort();
-			//LargestRange LargestRange = new LargestRange();
+			//LargestRange LargestRange = new LargestRange();rOrString
 			//CaesarCypherEncryter CaesarCypherEncryter = new CaesarCypherEncryter();
 			//FibonacciRecurssive FibonacciRecurssive = new FibonacciRecurssive();
 			//RunLengthEncoding RunLengthEncoding = new RunLengthEncoding();
-			CharacterDocumentMatch CharacterDocumentMatch = new CharacterDocumentMatch();
+			//CharacterDocumentMatch CharacterDocumentMatch = new CharacterDocumentMatch();
+			//PalindromePartitioningMinCuts PalindromePartitioningMinCuts = new PalindromePartitioningMinCuts();
+			BalancedParanthesisOrString BalancedParanthesisOrString = new BalancedParanthesisOrString();
 		}
 
 	}
