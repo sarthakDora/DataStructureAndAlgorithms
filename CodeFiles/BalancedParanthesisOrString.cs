@@ -12,7 +12,7 @@ namespace DataStructureAndAlgo
 			var input2 = "(({{[[([)])]]}}))";
 			var input3 = "((AB)(BC)(()";
 			Console.WriteLine(BalancedBrackets(input2));
-			Console.WriteLine(BalancedParanthesis(input3));
+			Console.WriteLine(BalancedParanthesis("(AB)"));
 		}
 		public bool BalancedBrackets(string str)
 		{
@@ -68,9 +68,19 @@ namespace DataStructureAndAlgo
 				}
 				else if(closingBrackets.Contains(currVal))
 				{
-					if(bStack.Peek().ContainsValue(bracketsMap[currVal]))
+					if(bStack.Count <= 0 )
+					{
+						idxValPair.Add(i, currVal);
+						bStack.Push(idxValPair);
+					}
+					else if(bStack.Peek().ContainsValue(bracketsMap[currVal]))
 					{
 						bStack.Pop();
+					}
+					else
+					{
+						idxValPair.Add(i, currVal);
+						bStack.Push(idxValPair);
 					}
 				}
 			}
