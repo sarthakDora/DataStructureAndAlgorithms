@@ -12,7 +12,7 @@ namespace DataStructureAndAlgo
 			var input2 = "(({{[[([)])]]}}))";
 			var input3 = "((AB)(BC)(()";
 			Console.WriteLine(BalancedBrackets(input2));
-			Console.WriteLine(BalancedParanthesis("(AB)"));
+			Console.WriteLine(BalancedParanthesis(input3));
 		}
 		public bool BalancedBrackets(string str)
 		{
