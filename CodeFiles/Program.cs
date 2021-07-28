@@ -37,7 +37,9 @@ namespace DataStructureAndAlgo
 			//CharacterDocumentMatch CharacterDocumentMatch = new CharacterDocumentMatch();
 			//PalindromePartitioningMinCuts PalindromePartitioningMinCuts = new PalindromePartitioningMinCuts();
 			//BalancedParanthesisOrString BalancedParanthesisOrString = new BalancedParanthesisOrString();
-			BubbleSort BubbleSort = new BubbleSort();
+			//BubbleSort BubbleSort = new BubbleSort();
+			//InsertionSort InsertionSort = new InsertionSort();
+			SelectionSort SelectionSort = new SelectionSort();
 		}
 
 	}
