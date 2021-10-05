@@ -39,7 +39,8 @@ namespace DataStructureAndAlgo
 			//BalancedParanthesisOrString BalancedParanthesisOrString = new BalancedParanthesisOrString();
 			//BubbleSort BubbleSort = new BubbleSort();
 			//InsertionSort InsertionSort = new InsertionSort();
-			SelectionSort SelectionSort = new SelectionSort();
+			//SelectionSort SelectionSort = new SelectionSort();
+			ClimbStairs ClimbStairs = new ClimbStairs();
 		}
 
 	}
