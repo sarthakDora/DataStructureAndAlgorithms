@@ -10,7 +10,9 @@ namespace DataStructureAndAlgo
 		public BSTTraversal()
 		{
 			loadData();
-			var finalOrder = inOrder(BST, new List<int>());
+			var finalInOrder = inOrder(BST, new List<int>());
+			var finalPreOrder = preOrder(BST, new List<int>());
+			var finalPostOrder = postOrder(BST, new List<int>());
 		}
 		public void loadData()
 		{
@@ -33,13 +35,25 @@ namespace DataStructureAndAlgo
 			}
 			return array;
 		}
-		private void preOrder(BinaryTree tree, int[] array)
+		private List<int> preOrder(Node tree, List<int> array)
 		{
-
+			if (tree != null)
+			{
+				array.Add(tree.value);
+				preOrder(tree.left, array);
+				preOrder(tree.right, array);
+			}
+			return array;
 		}
-		private void postOrder(BinaryTree tree, int[] array)
+		private List<int> postOrder(Node tree, List<int> array)
 		{
-
+			if (tree != null)
+			{
+				postOrder(tree.left, array);
+				postOrder(tree.right, array);
+				array.Add(tree.value);
+			}
+			return array;
 		}
 
 	}
