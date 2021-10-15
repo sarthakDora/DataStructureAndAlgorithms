@@ -40,7 +40,8 @@ namespace DataStructureAndAlgo
 			//BubbleSort BubbleSort = new BubbleSort();
 			//InsertionSort InsertionSort = new InsertionSort();
 			//SelectionSort SelectionSort = new SelectionSort();
-			ClimbStairs ClimbStairs = new ClimbStairs();
+			//ClimbStairs ClimbStairs = new ClimbStairs();
+			BSTTraversal BSTTraversal = new BSTTraversal();
 		}
 
 	}
