@@ -7,6 +7,7 @@ namespace DataStructureAndAlgo
 	public class BSTTraversal
 	{
 		public Node BST { get; private set; }
+		// Time O(n) | space O(n) (n is depth of the tree)
 		public BSTTraversal()
 		{
 			loadData();
