@@ -41,7 +41,8 @@ namespace DataStructureAndAlgo
 			//InsertionSort InsertionSort = new InsertionSort();
 			//SelectionSort SelectionSort = new SelectionSort();
 			//ClimbStairs ClimbStairs = new ClimbStairs();
-			BSTTraversal BSTTraversal = new BSTTraversal();
+			//BSTTraversal BSTTraversal = new BSTTraversal();
+			ValidateBST ValidateBST = new ValidateBST();
 		}
 
 	}
