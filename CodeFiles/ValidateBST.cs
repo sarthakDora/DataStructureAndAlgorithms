@@ -6,18 +6,25 @@ namespace DataStructureAndAlgo
 {
     internal class ValidateBST
     {
-        readonly BST _bst;
+        BST _bst;
         public ValidateBST()
         {
-            _bst = new BST(10) { left = new BST(5), right = new BST(15) };
-            _bst.left.right = new BST(5);
-            _bst.left.left = new BST(2);
-            _bst.left.left.left = new BST(1);
-            _bst.right.left = new BST(13);
-            _bst.right.right = new BST(22);
-            _bst.right.left.right = new BST(14);
+            constructBST();
             Console.WriteLine(ValidateBst(_bst)); 
         }
+        private void constructBST()
+        {
+            _bst = new BST(10);
+            _bst.Insert(5);
+            _bst.Insert(15);
+            _bst.Insert(5);
+            _bst.Insert(2);
+            _bst.Insert(1);
+            _bst.Insert(13);
+            _bst.Insert(22);
+            _bst.Insert(14);
+        }
+
         public bool ValidateBst(BST tree)
         {
             return isValidateHelper(tree, int.MinValue, int.MaxValue);

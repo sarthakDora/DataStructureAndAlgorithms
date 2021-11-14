@@ -55,6 +55,112 @@ namespace DataStructureAndAlgo
 		{
 			this.value = value;
 		}
+		//Average: O(log(n)) time | O(log(n)) space
+		public virtual BST Insert(int value)
+        {
+			if (value < this.value)
+			{
+				if(this.left == null)
+                {
+					this.left = new BST(value);
+                }
+				else this.left.Insert(value);
+			}
+            else
+            {
+				if (this.right == null)
+                {
+					this.right = new BST(value);
+                }
+				else { this.right.Insert(value); }
+            }
+			return this;
+        }
+		//Average: O(log(n)) time | O(log(n)) space
+		public virtual bool Contains(int value)
+        {
+			if (value < this.value)
+			{
+				if (left == null)
+				{
+					return false;
+				}
+				else return left.Contains(value);
+			}
+			else if (value > this.value)
+			{
+				if (right == null)
+				{
+					return false;
+				}
+				else
+				{
+					return right.Contains(value);
+				}
+			}
+			else return true;
+        }
+
+		public virtual void Remove(int value, BST parent)
+        {
+			if(value < this.value)
+            {
+				if(left != null)
+                {
+					left.Remove(value, this);
+                }
+            }
+			else if(value > this.value)
+            {
+				if(right != null)
+                {
+					right.Remove(value, this);
+                }
+            }
+			else
+            {
+				if(left != null && right != null)
+                {
+					this.value = right.getMinValue();
+					right.Remove(this.value, this);
+				}
+				else if(parent == null)
+                {
+					if(left != null)
+                    {
+						this.value = left.value;
+						right = left.right;
+						left = left.left;
+                    }
+					if (right != null)
+					{
+						this.value = right.value;
+						left = right.left;
+						right = right.right;
+					}
+					else { }
+				}
+				else if(parent.left == this)
+                {
+					parent.left = left != null ? left : right;
+				}
+				else if(parent.right == this)
+                {
+					parent.right = left != null ? left : right;
+				}
+            }
+        }
+		private int getMinValue()
+		{
+			if (left == null)
+			{
+				return this.value;
+			}
+			else
+			{
+				return left.getMinValue();
+			}
+		}
 	}
 
 }
