@@ -10,7 +10,12 @@ namespace DataStructureAndAlgo
         {
             var array = new int[] { 1, 2, 3, 5, 5, 15, 20, 17, 22 };
             var bst = new BSTMinHeight().constructMinHeightBSTV3(array, 0, array.Length - 1);
-
+            FindKthLargestValueInBst_ViaInOrder(bst, 3);
+        }
+        public int FindKthLargestValueInBst_ViaInOrder(BST tree, int k)
+        {
+            return k;
+           
         }
     }
 }
