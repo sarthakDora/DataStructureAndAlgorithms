@@ -55,6 +55,14 @@ namespace DataStructureAndAlgo
 		{
 			this.value = value;
 		}
+		public virtual BST Insert(int[] values)
+        {
+            foreach (var value in values)
+            {
+				Insert(value);
+			}
+			return this;
+        }
 		//Average: O(log(n)) time | O(log(n)) space
 		public virtual BST Insert(int value)
         {

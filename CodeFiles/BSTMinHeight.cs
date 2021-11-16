@@ -52,7 +52,7 @@ namespace DataStructureAndAlgo
             return bst;
         }
         //Time = O(N) | Space = O(N) ----------> This one is most elegant method
-        private BST constructMinHeightBSTV3(int[] array, int startIdx, int endIdx)
+        internal BST constructMinHeightBSTV3(int[] array, int startIdx, int endIdx)
         {
             if (endIdx < startIdx) return null;
             var midIdx = Convert.ToInt32(Math.Floor(Convert.ToDecimal((startIdx + endIdx) / 2)));
