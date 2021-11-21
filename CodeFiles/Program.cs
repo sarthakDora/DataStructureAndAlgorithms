@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace DataStructureAndAlgo
 {
@@ -44,7 +45,13 @@ namespace DataStructureAndAlgo
 			//BSTTraversal BSTTraversal = new BSTTraversal();
 			//ValidateBST ValidateBST = new ValidateBST();
 			//BSTMinHeight BSTMinHeight = new BSTMinHeight();
-			BSTFindKLargestValue BSTFindKLargestValue = new BSTFindKLargestValue();
+			//BSTFindKLargestValue BSTFindKLargestValue = new BSTFindKLargestValue();
+			Graph.Node Node = new Graph.Node("A");
+			Node.AddChild("B").AddChild("E");
+			Node.AddChild("C");
+			Node.AddChild("D").AddChild("G").AddChild("K");
+			var rslt = Node.DeapthFirstSearch(new List<string>());
+
 		}
 
 	}
