@@ -14,19 +14,8 @@ namespace DataStructureAndAlgo.Graph
         }
         public Node AddChild(string name)
         {
-            Node child = new Node(name);    
-            Children.Add(child);
+            Children.Add(new Node(name));
             return this;
-        }
-        //Time : O(v+e) | space: O(v)
-        public List<string> DeapthFirstSearch(List<string> array)
-        {
-            array.Add(this.Name);
-            for (int i = 0; i < this.Children.Count; i++)
-            {
-                this.Children[i].DeapthFirstSearch(array);
-            }
-            return array;
         }
     }
 }

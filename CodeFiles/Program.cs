@@ -46,12 +46,9 @@ namespace DataStructureAndAlgo
 			//ValidateBST ValidateBST = new ValidateBST();
 			//BSTMinHeight BSTMinHeight = new BSTMinHeight();
 			//BSTFindKLargestValue BSTFindKLargestValue = new BSTFindKLargestValue();
-			//Graph.Node Node = new Graph.Node("A");
-			//Node.AddChild("B").AddChild("E");
-			//Node.AddChild("C");
-			//Node.AddChild("D").AddChild("G").AddChild("K");
-			//var rslt = Node.DeapthFirstSearch(new List<string>());
-			Graph.SingleCycleCheck SingleCycleCheck = new Graph.SingleCycleCheck();
+			//Graph.SingleCycleCheck SingleCycleCheck = new Graph.SingleCycleCheck();
+			//Graph.DepthFirstSearch DepthFirstSearch = new Graph.DepthFirstSearch();
+			Graph.BreadthFirstSearch BreadthFirstSearch = new Graph.BreadthFirstSearch();
 		}
 
 	}

@@ -28,7 +28,7 @@ namespace DataStructureAndAlgo.Graph
         {
             var jump = array[currentIdx];
             var nextIdx = (currentIdx + jump) % array.Count; // this will make any bigger number into a cycle.
-                                                             // Example [26,1,2,3,4]. No mod of 0+26%5 would be 1.
+                                                             // Example [26,1,2,3,4]. Now mod of 0+26%5 would be 1.
                                                              // So new idx would be 1
             return nextIdx >= 0 ? nextIdx : nextIdx + array.Count;
         }
