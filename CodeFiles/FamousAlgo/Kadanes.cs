@@ -14,7 +14,8 @@ namespace DataStructureAndAlgo
         //Time: O(N) | Space: O(1)
         private int getMaxSumFromArrayUsingKadanes(int[] array)
         {
-            var maxSumInHere =0;
+            //This two variables can be initalized by array[0] and then for loop will start from 1 instead of 0
+            var maxSumInHere =0; 
             var maxSumSoFar = int.MinValue;
 
             for (var i = 0; i < array.Length; i++)
