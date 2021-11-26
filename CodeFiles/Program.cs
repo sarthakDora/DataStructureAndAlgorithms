@@ -48,7 +48,8 @@ namespace DataStructureAndAlgo
 			//BSTFindKLargestValue BSTFindKLargestValue = new BSTFindKLargestValue();
 			//Graph.SingleCycleCheck SingleCycleCheck = new Graph.SingleCycleCheck();
 			//Graph.DepthFirstSearch DepthFirstSearch = new Graph.DepthFirstSearch();
-			Graph.BreadthFirstSearch BreadthFirstSearch = new Graph.BreadthFirstSearch();
+			//Graph.BreadthFirstSearch BreadthFirstSearch = new Graph.BreadthFirstSearch();
+			Kadanes Kadanes  = new Kadanes();
 		}
 
 	}
