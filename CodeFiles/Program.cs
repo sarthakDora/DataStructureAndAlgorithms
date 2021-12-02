@@ -50,7 +50,9 @@ namespace DataStructureAndAlgo
 			//Graph.DepthFirstSearch DepthFirstSearch = new Graph.DepthFirstSearch();
 			//Graph.BreadthFirstSearch BreadthFirstSearch = new Graph.BreadthFirstSearch();
 			//Kadanes Kadanes  = new Kadanes();
-			DijKstrasAlgo DijKstrasAlgo = new DijKstrasAlgo();
+			//DijKstrasAlgo DijKstrasAlgo = new DijKstrasAlgo();
+			//LeetCode.AmazonDemolitionRobot AmazonDemolitionRobot = new LeetCode.AmazonDemolitionRobot();
+			NumberOfWaysToTraverseGraph NumberOfWaysToTraverseGraph = new NumberOfWaysToTraverseGraph();
 		}
 
 	}

@@ -26,6 +26,7 @@ namespace DataStructureAndAlgo
                 Console.WriteLine((expected[i] == actual[i]));
             }
         }
+        // Time : O(v^2+e) | Space O(v)
         public int[] DijkstrasAlgorithm_Unoptimal(int start, int[][][] edges)
         {
             var numberOfVertices = edges.Length;
@@ -74,7 +75,6 @@ namespace DataStructureAndAlgo
 
             return finalDistances;
         }
-
         private int[] getVertexWithMinDistances(int[] distances, HashSet<int> visited)
         {
             int currentMinDistance = Int32.MaxValue;
@@ -92,6 +92,53 @@ namespace DataStructureAndAlgo
                 }
             }
             return new int[] { vertex, currentMinDistance };
+        }
+        //public int[] DijKstrasAlgorithm_OptimalSol(int start, int[][][] edges)
+        //{
+
+        //}
+    }
+    public class Item
+    {
+        public int vertex;
+        public int distance;
+        public Item(int vertex, int distance)
+        {
+            this.vertex = vertex;
+            this.distance = distance;
+        }
+    }
+    public class MinHeap
+    {
+        Dictionary<int, int> vertexDictionary = new Dictionary<int, int>();
+        List<Item> heap = new List<Item> ();
+
+        public MinHeap(List<Item> array)
+        {
+            for (int i = 0; i < array.Count; i++)
+            {
+                var item = array[i];
+                vertexDictionary[item.vertex] = item.vertex;
+            }
+            heap = buildHeap(array);
+        }
+
+        private List<Item> buildHeap(List<Item> array)
+        {
+            int firstParentIdx = (array.Count - 2) / 2;
+            for (int currentIdx = firstParentIdx+1; currentIdx >=0; currentIdx--)
+            {
+                siftDown(currentIdx, array.Count - 1, array);
+            }
+            return array;
+        }
+        public bool IsEmpty()
+        {
+            return heap.Count == 0; 
+        }
+        private void siftDown(int currentIdx, int endIdx, List<Item> heap)
+        {
+            
         }
     }
 }
