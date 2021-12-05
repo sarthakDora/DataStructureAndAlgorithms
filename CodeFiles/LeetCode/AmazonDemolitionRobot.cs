@@ -24,37 +24,44 @@ namespace DataStructureAndAlgo.LeetCode
 };
             int numRows = lot.GetLength(0); int numColumns = lot.GetLength(1);
             var actual = DemolitionRobot(lot, numColumns, numRows);
-            var try1 = DemolitionRobot2(lot, numColumns, numRows);
+            var qApproach = DemolitionRobot3(lot, numColumns, numRows);
             // Console.WriteLine(DemolitionRobot(lot, numColumns, numRows));
         }
-        private int DemolitionRobot2(int[,] lot, int numColumns, int numRows)
+        private int DemolitionRobot3(int[,] lot, int numColumns, int numRows)
         {
-            finalDistance = 0;
-            List<int> visitedArray = new List<int>();
-            Queue<int> queue = new Queue<int>();
-            queue.Enqueue(lot[0, 0]);
-            int rowIdx = 0;
-            int colIdx = 0;
+            int[] dRow = { -1, 0, 1, 0 }; //Direction vector
+            int[] dCol = { 0, 1, 0, -1 }; //Direction vector
+            var visited = new bool[numRows, numColumns];
+            var queue = new Queue<NodePair>();
+            queue.Enqueue(new NodePair(0, 0));
+            visited[0, 0] = true;
+            var minDist = int.MaxValue;
             while (queue.Count > 0)
             {
-                var current = queue.Dequeue();
-                if (current == 0) continue;
-                visitedArray.Add(current);
-                if (current == 9)
+                var currNode = queue.Dequeue();
+                var row = currNode.x;
+                var col = currNode.y;
+                for (int i = 0; i < 4; i++)
                 {
-                    queue.Clear();
-                    break;
-                }
-                if (numRows > rowIdx + 1 && numColumns > colIdx) queue.Enqueue(lot[rowIdx + 1, colIdx]);
-                if (numRows > rowIdx - 1 && rowIdx - 1 > 0 &&  numColumns > colIdx ) queue.Enqueue(lot[rowIdx - 1, colIdx]);
-                if (numColumns > colIdx + 1 && numRows > rowIdx) queue.Enqueue(lot[rowIdx, colIdx + 1]);
-                if (numColumns > colIdx - 1 && colIdx - 1 > 0 && numRows > rowIdx) queue.Enqueue(lot[rowIdx, colIdx - 1]);
-                rowIdx++;
-                colIdx++;
-            }
-           
+                    var adjX = row + dRow[i];
+                    var adjY = col + dCol[i];
 
-            return visitedArray.Count;
+                    if (adjX < 0 || adjY < 0 || adjX >= numRows || adjY >= numColumns || lot[adjX, adjY] == 0) continue;
+
+                    if (lot[adjX, adjY] == 9)
+                    {
+                        minDist = Math.Min(minDist, lot[row, col]);
+                    }
+                    if (lot[adjX, adjY] == 1 && !visited[adjX, adjY])
+                    {
+                        lot[adjX, adjY] = lot[row, col] + 1;
+                        visited[adjX, adjY] = true;
+                        queue.Enqueue(new NodePair(adjX, adjY));
+                    }
+                }
+            }
+            return minDist;
+
         }
 
         private int DemolitionRobot(int[,] lot, int numColumns, int numRows)
@@ -130,4 +137,15 @@ namespace DataStructureAndAlgo.LeetCode
         }
 
     }
+
+    public class NodePair
+    {
+        public int x, y;
+        public NodePair(int first, int second)
+        {
+            x = first;
+            y = second;
+        }
+    }
+
 }
