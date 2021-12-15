@@ -27,10 +27,10 @@ namespace DataStructureAndAlgo.LeetCode
                 var distance = Convert.ToInt32(Math.Sqrt(loc[0] * loc[0] + loc[1] * loc[1]));
                 pointsDistance.Add(new List<int> { loc[0], loc[1], distance });
             }
-            var finalLoc = buildMaxHeap(pointsDistance, numDeliveries);
+            var finalLoc = buildMinHeap(pointsDistance, numDeliveries);
             return finalLoc;
         }
-        private List<List<int>> buildMaxHeap(List<List<int>> heap, int numOfDeliveries)
+        private List<List<int>> buildMinHeap(List<List<int>> heap, int numOfDeliveries)
         {
             var parentIdx = (heap.Count - 2) / 2;
             for (int i = parentIdx; i >= 0; i--)
