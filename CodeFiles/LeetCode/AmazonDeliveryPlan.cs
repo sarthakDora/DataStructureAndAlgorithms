@@ -15,7 +15,7 @@ namespace DataStructureAndAlgo.LeetCode
             allLocations.Add(new List<int> { 3, 4 });
             allLocations.Add(new List<int> { -2,1  });
             allLocations.Add(new List<int> { -1, 1 });
-            var numDeliveries = 4;
+            var numDeliveries = 2;
             var output = deliveryPlan2(allLocations, numDeliveries);
         }
         private List<List<int>> deliveryPlan2(List<List<int>> allLocations, int numDeliveries)
@@ -35,7 +35,7 @@ namespace DataStructureAndAlgo.LeetCode
             var parentIdx = (heap.Count - 2) / 2;
             for (int i = parentIdx; i >= 0; i--)
             {
-                siftDown(i, heap.Count, heap);
+                siftDown(i, heap.Count-1, heap);
             }
             var final = new List<List<int>>();
             for (int i = 0; i < numOfDeliveries; i++)
