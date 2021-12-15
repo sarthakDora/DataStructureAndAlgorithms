@@ -53,8 +53,8 @@ namespace DataStructureAndAlgo
 			//DijKstrasAlgo DijKstrasAlgo = new DijKstrasAlgo();
 			//LeetCode.AmazonDemolitionRobot AmazonDemolitionRobot = new LeetCode.AmazonDemolitionRobot();
 			//NumberOfWaysToTraverseGraph NumberOfWaysToTraverseGraph = new NumberOfWaysToTraverseGraph();
-			//LeetCode.AmazonDeliveryPlan AmazonDeliveryPlan = new LeetCode.AmazonDeliveryPlan();
-			Graph.RiverSizes RiverSizes = new Graph.RiverSizes();
+			LeetCode.AmazonDeliveryPlan AmazonDeliveryPlan = new LeetCode.AmazonDeliveryPlan();
+			//Graph.RiverSizes RiverSizes = new Graph.RiverSizes();
 		}
 
 	}
