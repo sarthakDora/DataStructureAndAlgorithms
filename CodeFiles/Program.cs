@@ -55,7 +55,7 @@ namespace DataStructureAndAlgo
 			//NumberOfWaysToTraverseGraph NumberOfWaysToTraverseGraph = new NumberOfWaysToTraverseGraph();
 			//LeetCode.AmazonDeliveryPlan AmazonDeliveryPlan = new LeetCode.AmazonDeliveryPlan();
 			//Graph.RiverSizes RiverSizes = new Graph.RiverSizes();
-			AmazonMusic AmazonMusic = new AmazonMusic();
+			//AmazonMusic AmazonMusic = new AmazonMusic();
 		}
 
 	}
