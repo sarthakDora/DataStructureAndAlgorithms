@@ -56,6 +56,7 @@ namespace DataStructureAndAlgo
 			//LeetCode.AmazonDeliveryPlan AmazonDeliveryPlan = new LeetCode.AmazonDeliveryPlan();
 			//Graph.RiverSizes RiverSizes = new Graph.RiverSizes();
 			//AmazonMusic AmazonMusic = new AmazonMusic();
+			Graph.RemoveIslands RemoveIslands = new Graph.RemoveIslands();
 		}
 
 	}
