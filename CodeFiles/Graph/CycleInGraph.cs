@@ -7,7 +7,7 @@ namespace DataStructureAndAlgo.Graph
     public class CycleInGraph
     {
         //First vertex is last vertex is a cycle
-
+        //Time O(v + e) | Space O(v)
         public CycleInGraph()
         {
             int[][] input = new int[][] {
